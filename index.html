@@ -68,6 +68,47 @@
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <h2 class="modal-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <form class="form">
+                <div class="form-field">
+                  <label class="form-label" for="name">Имя</label>
+                  <input class="form-input" type="text" name="name" id="name" />
+                   <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/svg/sprite.svg#person-modal"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="tel">Телефон</label>
+                  <input class="form-input" type="tel" name="tel" id="tel" />
+                   <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/svg/sprite.svg#phone-modal"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <label class="form-label" for="mail">Почта</label>
+                  <input class="form-input" type="email" name="mail" id="mail" />
+                  <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/svg/sprite.svg#email-modal"></use>
+                  </svg>
+                </div>
+
+                <label class="label-comment" for="comment">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="modal-comment"
+                  placeholder="Введите текст"
+                ></textarea>
+
+                <input class="input-license" type="checkbox" name="license" id="license" />
+                <label class="label-license" for="license"
+                  >Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+
+                <button type="submit">Отправить</button>
+              </form>
               <button class="modal-close" type="button" data-modal-close>
                 <svg class="modal-close-icon" width="18" height="18">
                   <use href="./images/svg/sprite.svg#close-modal"></use>
