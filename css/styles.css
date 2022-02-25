@@ -383,6 +383,10 @@ label {
 }
 
 .label-license {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -391,8 +395,59 @@ label {
 
 .input-license {
   appearance: none;
+  position: absolute;
+}
+.input-license:checked + .icon-license {
+  background-color: #2196f3;
+  background-image: url(../images/svg/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
 }
 
+.icon-license {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.label-agreement {
+  padding-left: 0.25em;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.modal-submit {
+  padding: 10px 55px 10px 56px;
+  max-width: 200px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  border-radius: 4px;
+  border: transparent;
+
+  background-color: #2196f3;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .modal-close {
   position: absolute;
   right: 8px;
@@ -746,6 +801,40 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Подписка */
+
+.subscribe {
+  max-width: 570px;
+  position: relative;
+}
+
+.sub-wrp {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.subscribe-btn {
+  position: absolute;
+  padding: 10px 28px 10px 29px;
+  display: block;
+  max-width: 200px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+input[name="footer-mail"] {
+  width: 358px;
+}
 /* ПОРТФОЛИО */
 
 .portfolio-button {

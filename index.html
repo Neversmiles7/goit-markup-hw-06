@@ -75,20 +75,25 @@
                 <div class="form-field">
                   <label class="form-label" for="name">Имя</label>
                   <input class="form-input" type="text" name="name" id="name" />
-                   <svg class="modal-icon" width="18" height="18">
+                  <svg class="modal-icon" width="18" height="18">
                     <use href="./images/svg/sprite.svg#person-modal"></use>
                   </svg>
                 </div>
                 <div class="form-field">
                   <label class="form-label" for="tel">Телефон</label>
                   <input class="form-input" type="tel" name="tel" id="tel" />
-                   <svg class="modal-icon" width="18" height="18">
+                  <svg class="modal-icon" width="18" height="18">
                     <use href="./images/svg/sprite.svg#phone-modal"></use>
                   </svg>
                 </div>
                 <div class="form-field">
                   <label class="form-label" for="mail">Почта</label>
-                  <input class="form-input" type="email" name="mail" id="mail" />
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
                   <svg class="modal-icon" width="18" height="18">
                     <use href="./images/svg/sprite.svg#email-modal"></use>
                   </svg>
@@ -101,13 +106,22 @@
                   class="modal-comment"
                   placeholder="Введите текст"
                 ></textarea>
+                <div class="modal-bottom">
+                  <label class="label-license" for="license">
+                    <input
+                      class="input-license"
+                      type="checkbox"
+                      name="license"
+                      id="license"
+                    />
+                    <span class="icon-license"> </span>
 
-                <input class="input-license" type="checkbox" name="license" id="license" />
-                <label class="label-license" for="license"
-                  >Соглашаюсь с рассылкой и принимаю <span class="label-agreement">Условия договора</span> 
-                </label>
+                    Соглашаюсь с рассылкой и принимаю
+                    <span class="label-agreement"> Условия договора</span>
+                  </label>
 
-                <button type="submit">Отправить</button>
+                  <button type="submit" class="modal-submit">Отправить</button>
+                </div>
               </form>
               <button class="modal-close" type="button" data-modal-close>
                 <svg class="modal-close-icon" width="18" height="18">
@@ -483,6 +497,17 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe"> <div class="sub-wrp">
+          <label class="susbsribe-title" for="footer-mail">Подпишитесь на рассылку</label>
+          <input type="email" name="footer-mail" id="footer-mail" placeholder="Email"> 
+          <button class="subscribe-btn" type="button">Подписаться
+            <svg class="icon-telegram" width="24" height="24">
+              <use href="./images/svg/sprite.svg#icon-send-telegram"></use>
+            </svg>
+          </button>
+          </div>
         </div>
       </div>
     </footer>
